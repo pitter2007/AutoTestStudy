@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="thread" parallel="classes" thread-count="3">
+    <test name="demo1">
+        <classes >
+            <class name="com.course.testng.multiThread.MultiThread0nxml"/>
+        </classes>
+    </test>
+    <test name="demo2">
+        <classes>
+            <class name="com.course.testng.multiThread.MultiThread0nxml"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,23 @@
+2019-02-22 13:41:57.814 [main] INFO  com.course.Application - Starting Application on AEOAY-705181519 with PID 9476 (D:\WebProject\AutoTestStudy\Chapter13\target\classes started by Administrator in D:\WebProject\AutoTestStudy)
+2019-02-22 13:41:57.817 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2019-02-22 13:41:58.852 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2019-02-22 13:41:59.078 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d94f756c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-02-22 13:41:59.594 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2019-02-22 13:41:59.649 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-02-22 13:41:59.650 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-02-22 13:41:59.665 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\Java\jdk1.8.0_172\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Program Files\Python37\Scripts\;D:\Program Files\Python37\;D:\Web\VanDyke Software\Clients\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;D:\Program Files\TortoiseSVN\bin;d:\Program Files\Java\jdk1.8.0_172\bin;D:\Web\nmap-7.60;D:\Web\sqlite\;D:\Web\nmap-7.60;d:\Web\Git\cmd;D:\Web\maven\\bin;D:\Web\TortoiseGit\bin;D:\Web\tomcatbin;D:\Web\platform-tools_r22-windows\platform-tools;D:\Program Files\Redis\;D:\Program Files (x86)\sbt\bin;C:\Users\Administrator.AEOAY-705181519\AppData\Local\Programs\Fiddler;d:\Program Files\JetBrains\PyCharm 2018.3.3\bin;;.]
+2019-02-22 13:41:59.830 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-02-22 13:41:59.831 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1975 ms
+2019-02-22 13:42:00.284 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-02-22 13:42:00.395 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-02-22 13:42:00.490 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-02-22 13:42:00.525 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-02-22 13:42:00.537 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-02-22 13:42:00.556 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-02-22 13:42:00.704 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2019-02-22 13:42:00.707 [main] INFO  com.course.Application - Started Application in 3.596 seconds (JVM running for 4.399)
+2019-02-22 13:42:56.490 [http-nio-8888-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-02-22 13:42:56.490 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-02-22 13:42:56.495 [http-nio-8888-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2019-02-22 13:46:40.278 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-02-22 13:46:40.625 [http-nio-8888-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.

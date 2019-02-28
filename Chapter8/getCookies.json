@@ -1,0 +1,56 @@
+[
+  {
+    "description":"这是一个会返回cookies信息的get请求",
+    "request":{
+      "uri":"/getCookiesRequest",
+      "method":"get"
+    },
+    "response":{
+      "cookies":{
+        "login":"true"
+      },
+      "text":"恭喜获得cookies信息成功",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+
+  {
+    "description": "带cookie的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "cookies get 张三 request,login success",
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description": "带cookie的post请求",
+    "request": {
+      "uri": "/postCookies",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "zhangsan",
+        "age": "28"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "zhangsan": "success",
+        "status": "1"
+      }
+    }
+  }
+]

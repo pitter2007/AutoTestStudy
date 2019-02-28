@@ -1,0 +1,21 @@
+[
+  {
+    "description": "带header的post请求",
+    "request": {
+      "uri": "/post/with/header",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "json": {
+        "name": "wanglaosi"
+      }
+    },
+    "response": {
+      "json": {
+        "wanglaosi": "success",
+        "status": 1
+      }
+    }
+  }
+]
