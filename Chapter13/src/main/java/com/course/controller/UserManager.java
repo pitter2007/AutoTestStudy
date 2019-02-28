@@ -43,11 +43,7 @@ public class UserManager {
     @ApiOperation(value = "获取用户(列表)信息接口", httpMethod = "POST")
     @RequestMapping(value = "/getUserInfo", method = RequestMethod.POST)
     public List<User> getUserInfo(HttpServletRequest request, @RequestBody User user) {
-/*        List<User> users = template.selectList("getUserInfo",user);
-        log.info("getUserInfo获取到的用户数量是" +users.size());
-        return users;*/
         Boolean x = verifyCookies(request);
-//        System.out.println("*************" + request.getCookies());
         if (x == true) {
             List<User> users = template.selectList("getUserInfo", user);
             log.info("getUserInfo获取到的用户数量是" + users.size());
@@ -82,7 +78,7 @@ public class UserManager {
             if (cookie.getName().equals("login") &&
                     cookie.getValue().equals("true")) {
                 log.info("cookies验证通过");
-                System.out.println("cookies验证通过");
+//                System.out.println("cookies验证通过");
                 return true;
             }
         }
