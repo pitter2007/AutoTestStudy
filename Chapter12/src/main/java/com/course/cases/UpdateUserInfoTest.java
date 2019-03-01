@@ -25,10 +25,15 @@ public class UpdateUserInfoTest {
         System.out.println(updateUserInfoTest.toString());
         System.out.println(TestConfig.updateUserInfoUrl);
 
-/*        int result = getResult(updateUserInfoTest);
+        int result = getResult(updateUserInfoTest);
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         User user = session.selectOne(updateUserInfoTest.getExpected(),updateUserInfoTest);
         Assert.assertNotNull(user);
-        Assert.assertNotNull(result);*/
+        Assert.assertNotNull(result);
     }
 
 
@@ -39,17 +44,21 @@ public class UpdateUserInfoTest {
         System.out.println(updateUserInfoTest.toString());
         System.out.println(TestConfig.updateUserInfoUrl);
 
-/*        int result = getResult(updateUserInfoTest);
+        int result = getResult(updateUserInfoTest);
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         User user = session.selectOne(updateUserInfoTest.getExpected(),updateUserInfoTest);
         Assert.assertNotNull(user);
-        Assert.assertNotNull(result);*/
+        Assert.assertNotNull(result);
     }
 
-/*
     private int getResult(UpdateUserInfoCase updateUserInfoTest) throws IOException {
         HttpPost post = new HttpPost(TestConfig.updateUserInfoUrl);
         JSONObject param = new JSONObject();
-        param.put("id",updateUserInfoTest.getId());
+        param.put("id",updateUserInfoTest.getUserId());
         param.put("userName",updateUserInfoTest.getUserName());
         param.put("sex",updateUserInfoTest.getSex());
         param.put("age",updateUserInfoTest.getAge());
@@ -65,6 +74,6 @@ public class UpdateUserInfoTest {
         HttpResponse response = TestConfig.client.execute(post);
         result  = EntityUtils.toString(response.getEntity(),"utf-8");
         return Integer.parseInt(result);
-    }*/
+    }
 
 }

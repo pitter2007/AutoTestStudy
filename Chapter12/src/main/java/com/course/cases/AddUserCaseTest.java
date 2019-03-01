@@ -28,9 +28,15 @@ public class AddUserCaseTest {
         //发请求
         String result = getResult(addUserCase);
 
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         //验证返回结果
-        User user = session.selectOne("addUser",addUserCase);
-        System.out.println(user.toString());
+        User addUser = session.selectOne("addUser", addUserCase);
+//        System.out.println("==========================" + result);
+        System.out.println("==========================" +addUser.toString());
         Assert.assertEquals(addUserCase.getExpected(),result);
 
     }
@@ -59,7 +65,7 @@ public class AddUserCaseTest {
 
         HttpResponse response = TestConfig.client.execute(post);
         result = EntityUtils.toString(response.getEntity(),"utf-8");
-        System.out.println(result);
+        System.out.println("******************" + result);
         return result;
     }
 

@@ -1,5 +1,6 @@
 package com.course.cases;
 
+import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.course.config.TestConfig;
@@ -30,11 +31,17 @@ public class GetUserInfoTest {
         System.out.println(TestConfig.getUserInfoUrl);
 
         JSONArray resultJson = getJsonResult(getUserInfoTest);
+        System.out.println("*****************" + resultJson);
+        //["[{\"id\":1,\"userName\":\"zhangsan\",\"password\":\"123456\",\"age\":\"25\",\"sex\":\"1\",\"permission\":\"0\",\"isDelete\":\"0\"}]"]
         User user = session.selectOne(getUserInfoTest.getExpected(),getUserInfoTest);
         List userList = new ArrayList();
         userList.add(user);
         JSONArray jsonArray = new JSONArray(userList);
-        Assert.assertEquals(jsonArray,resultJson);
+        String s = resultJson.get(0).toString();
+        JSONArray jsonArray1 = JSON.parseArray(s);
+        System.out.println("==================" + jsonArray1);
+
+        Assert.assertEquals(jsonArray,jsonArray1.toString());
 
     }
 
